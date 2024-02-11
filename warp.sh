@@ -83,8 +83,8 @@ WGCF_ProfilePath="${WGCF_ProfileDir}/${WGCF_Profile}"
 WireGuard_Interface='wgcf'
 WireGuard_ConfPath="/etc/wireguard/${WireGuard_Interface}.conf"
 
-WireGuard_Interface_DNS_IPv4='8.8.8.8,8.8.4.4'
-WireGuard_Interface_DNS_IPv6='2001:4860:4860::8888,2001:4860:4860::8844'
+WireGuard_Interface_DNS_IPv4='1.1.1.3,1.0.0.3'
+WireGuard_Interface_DNS_IPv6='2606:4700:4700::1113,2606:4700:4700::1003'
 WireGuard_Interface_DNS_46="${WireGuard_Interface_DNS_IPv4},${WireGuard_Interface_DNS_IPv6}"
 WireGuard_Interface_DNS_64="${WireGuard_Interface_DNS_IPv6},${WireGuard_Interface_DNS_IPv4}"
 WireGuard_Interface_Rule_table='51888'
@@ -100,10 +100,10 @@ WireGuard_Peer_AllowedIPs_IPv4='0.0.0.0/0'
 WireGuard_Peer_AllowedIPs_IPv6='::/0'
 WireGuard_Peer_AllowedIPs_DualStack='0.0.0.0/0,::/0'
 
-TestIPv4_1='1.0.0.1'
-TestIPv4_2='9.9.9.9'
-TestIPv6_1='2606:4700:4700::1001'
-TestIPv6_2='2620:fe::fe'
+TestIPv4_1='1.1.1.3'
+TestIPv4_2='1.0.0.3'
+TestIPv6_1='2606:4700:4700::1113'
+TestIPv6_2='2606:4700:4700::1003'
 CF_Trace_URL='https://www.cloudflare.com/cdn-cgi/trace'
 
 Get_System_Info() {
